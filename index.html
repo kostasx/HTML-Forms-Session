@@ -10,5 +10,58 @@
 </head>
 <body>
   <h1>Forms</h1>
+  <!-- When the form is 'submitted', an action is taken -->
+  <!-- Submit via: submit button click, Enter key, keyboard focus on the submit button and Space -->
+  <!-- Submission redirects to: http://127.0.0.1:5500/FORMS/form.html? -->
+  <!-- <form action="form.html" method="post"> -->
+  <form action="form.html" method="get">
+    <!-- Always accompany your input elements (<input>, <textarea>, <select>, etc.) with a label -->
+    <p>
+      <label for="first_name">First name</label>
+      <input id="first_name" type="text" name="first_name" placeholder="Enter in lowercase...">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="email@domain.com">
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="a strong one...">
+      <button>See text</button>
+    </p>
+    <button>Submit</button>
+  </form>
+
+  <hr />
+
+  <!-- Search Form -->
+   <!-- http://127.0.0.1:5500/FORMS/index.html?search=Ferrari -->
+   <form action="https://www.google.com/search">
+    <label>
+      Google Search
+      <input 
+        type="search" 
+        name="q" 
+        placeholder="Enter search term..." 
+        value="site:stackoverflow.com"
+        >
+    </label>
+    <!-- URL?q=Ferrari  -->
+     <!-- http://127.0.0.1:5500/FORMS/form.html?q=Ferrari -->
+    <!-- https://www.google.com/search?q=HTML+Forms -->
+    <button>Search</button>
+   </form>
+
+   <form action="">
+    <label for="">Baidu Search</label>
+    <input type="search" name="" id="">
+    <button>Search</button>
+   </form>
+
+   <form action="">
+    <label for="">Yandex Search</label>
+    <input type="search" name="" id="">
+    <button>Search</button>
+   </form>
 </body>
 </html>
